@@ -16,6 +16,8 @@
        flatten
        (apply merge)))
 
+
+;; from https://www.ummels.de/2014/06/08/dijkstra-in-clojure/
 (defn map-vals [m f]
   (into {} (for [[k v] m] [k (f v)])))
 
